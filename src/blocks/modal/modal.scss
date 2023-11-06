@@ -1,0 +1,67 @@
+.modal {
+  display: none;
+
+  &--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 158px 200px 100px;
+    background-color: #000000;
+    background-image: url(../img/logoModal.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+  &__text {
+    max-width: 900px;
+    margin-bottom: 58px;
+    font-family: Mutabor;
+    font-size: px-to-em(42);
+    line-height: lh-to-pct(51, 42);
+    color: #FBFF4B;
+    text-align: center;
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__content {
+      padding: 100px;
+    }
+    &__text {
+      max-width: 600px;
+      margin-bottom: 30px;
+      font-size: px-to-em(28);
+      line-height: lh-to-pct(34, 28);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__content {
+      padding: 50px 50px 20px;
+    }
+    &__text {
+      max-width: 400px;
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(24, 20);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__content {
+      padding: 30px 36px 10px;
+    }
+    &__text {
+      max-width: 240px;
+      margin-bottom: 20px;
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(15, 12);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+mixin form(modifier)
+  section.form&attributes(attributes)#reservation
+    h2.form__title Забронировать стол
+    form.form__area
+      input.form__field(type="text" placeholder="Как Вас зовут?")
+      input.form__field(type="tel" placeholder="Номер телефона")
+      .form__wrapper
+        input.form__field.form__field--big(type="text" placeholder="Выберите дату" onfocus="(this.type = 'date')")
+        input.form__field.form__field--small(type="text" placeholder="Время" onfocus="(this.type = 'time')")
+        input.form__field.form__field--big(type="number" placeholder="Количество персон" min="1" max="30")
+      input.form__field(type="text" placeholder="Ваши пожелания")
+      button.form__button(type="submit") Забронировать стол
+        include ./img/arrow.svg

@@ -1,0 +1,5 @@
+mixin slider(pictures)
+  .slider&attributes(attributes)
+    .slider__slide
+      each picture in pictures
+        img.slider__slide(src=`${picture}`, alt="Интерьер")

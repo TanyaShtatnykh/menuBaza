@@ -1,0 +1,94 @@
+.verification {
+  display: none;
+
+  &--open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+  }
+  &__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 802px;
+    padding: 62px 78px 80px;
+    background-color: #000000;
+    background-image: url(../img/logoV.png);
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    background-size: 648px auto;
+  }
+  &__text {
+    margin-bottom: 48px;
+    font-family: Mutabor;
+    font-size: px-to-em(42);
+    line-height: 130%;
+    text-align: center;
+    color: #FBFF4B;
+  }
+  &__btn {
+    min-width: 262px;
+    margin-bottom: 20px;
+    padding: 28px 30px;
+    border: 3px solid #FBFF4B;
+    background-color: transparent;
+    font-family: Mutabor;
+    font-size: px-to-em(20);
+    line-height: lh-to-pct(24, 20);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      background-color: #FBFF4B;
+      color: #000000;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__area {
+      width: 600px;
+      padding: 32px 48px;
+      background-size: contain;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__area {
+      width: 400px;
+      padding: 32px;
+      background-position: center center;
+    }
+    &__text {
+      margin-bottom: 20px;
+      font-size: px-to-em(24);
+    }
+    &__btn {
+      min-width: 210px;
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__area {
+      width: 280px;
+      padding: 16px;
+    }
+    &__text {
+      margin-bottom: 16px;
+      font-size: px-to-em(16);
+    }
+    &__btn {
+      min-width: 180px;
+      font-size: px-to-em(16);
+      margin-bottom: 12px;
+      padding: 12px;
+    }
+  }
+}

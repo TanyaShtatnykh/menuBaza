@@ -1,0 +1,20 @@
+mixin footer(modifier)
+  footer.footer&attributes(attributes)
+    img.footer__logo(src="img/stripe.png", alt="Логотип")
+    .footer__area
+      .footer__column
+        a.footer__link(href="#reservation") Забронировать стол
+          include ./img/arrow_up.svg
+        a.footer__link.footer__link--vk(href="https://vk.com/baza_lounge" target="_blank") Мы вконтакте
+          include ./img/vk-f.svg
+        a.footer__link.footer__link--ig(href="#" target="_blank") Инстаграм
+          include ./img/ig-f.svg
+      .footer__column
+        ul.footer__menu
+          li.footer__menu-item: a.footer__menu-link(href="#about") Про кальянную
+          li.footer__menu-item: a.footer__menu-link(href="#menu") Меню
+          li.footer__menu-item: a.footer__menu-link(href="#contacts") Контакты
+        a.footer__link(href="https://wallet.ytimes.ru/home?a=dc3ea535-fa10-48c1-b549-b43212dc2608&s=f1cfa04f-1966-4083-bb86-019b226f6e25" target="_blank") Оформить карту гостя
+          include ./img/card.svg
+        p.footer__text 18+ Употребление&nbsp;табака&nbsp;вредит&nbsp;вашему&nbsp;здоровью
+

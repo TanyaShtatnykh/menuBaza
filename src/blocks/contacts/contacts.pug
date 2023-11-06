@@ -1,0 +1,19 @@
+mixin contacts(modifier)
+  section.contacts&attributes(attributes)#contacts
+    h2.contacts__title Контакты
+    .contacts__wrapper
+      img.contacts__map(src="img/map.png", alt="Наше местоположение")
+      .contacts__info
+        a.contacts__item(href="https://2gis.ru/spb/inside/5348660212715637/firm/70000001030398765?m=30.364937%2C59.920884%2F15.4" target="_blank") 
+          p.contacts__name Адрес:
+          p.contacts__text Лиговский пр. 74
+        a.contacts__item(href="tel:+79219071190")
+          p.contacts__name Телефон:
+          p.contacts__text 907-11-90
+        .contacts__item
+          p.contacts__name Режим работы:
+          p.contacts__text пн-чт&nbsp;14:00&nbsp;-&nbsp;00:00 пт-&nbsp;сб&nbsp;14:00&nbsp;-&nbsp;02:00 вс&nbsp;14:00&nbsp;-&nbsp;00:00
+        a.contacts__item(href="mailto:baza_lounge@gmail.com")
+          p.contacts__name По всем вопросам:
+          p.contacts__text baza_lounge@gmail.com
+        a.contacts__button(href="mailto:baza_lounge@gmail.com") Написать 

@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 36px;
+
+  &__contacts {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+  }
+  &__address {
+    margin-bottom: 4px;
+    font-size: 1em;
+    line-height: lh-to-pct(22, 16);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+      color: #FBFF4B;
+    }
+  }
+  &__phone {
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(33, 24);
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    color: #FBFF4B;
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-link {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-text {
+    margin-left: 12px;
+  }
+  &__menu {
+    width: 100%;
+    max-width: 588px;
+    transition: 1s;
+  }
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;    
+  }
+  &__menu-item {
+    transition: 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__menu-link {
+    font-family: Mutabor;
+    font-size: px-to-em(24);
+    line-height: lh-to-pct(29, 24);
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+    &:hover {
+      color: #FBFF4B;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    &__menu {
+      max-width: 508px;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__logo-img {
+      width: 60px;
+      height: 60px;
+    }
+    &__logo-text {
+      width: 100px;
+      height: 36px;
+    }
+    &__menu {
+      max-width: 430px;
+    }
+    &__menu-link {
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(24, 20);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    padding: 10px 36px 20px;
+    &__address {
+      font-size: px-to-em(12);
+      line-height: lh-to-pct(18, 12);
+    }
+    &__phone {
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(24, 20);
+    }
+    &__block {
+      justify-content: center;
+      margin-top: 16px;
+    }
+    &__menu {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 10px 16px;
+    &__address {
+      font-size: px-to-em(10);
+      line-height: lh-to-pct(16, 10);
+    }
+    &__phone {
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(20, 16);
+    }
+    &__logo-link {
+      flex-direction: column;
+    }
+    &__logo-img {
+      width: 44px;
+      height: 44px;
+    }
+    &__logo-text {
+      width: 80px;
+      height: 28px;
+      margin: 6px 0 16px 0;
+    }
+  }
+}

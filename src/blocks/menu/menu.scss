@@ -1,0 +1,210 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 60px 36px;
+  
+  &__title {
+    align-self: center;
+    margin-bottom: 30px;
+    font-size: px-to-em(44);
+    line-height: lh-to-pct(54, 44);
+    font-weight: 400;
+    color: #FBFF4B;
+  }
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 78px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FBFF4B 0%, #FBFF4B 50.69%, #000 100%);
+    font-size: px-to-em(36);
+    line-height: lh-to-pct(44, 36);
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    letter-spacing: 6px;
+    cursor: pointer;
+    &::after {
+      content: ' ';
+      background: url("../img/menuArrow.svg") no-repeat center;
+      background-size: contain;
+      width: 52px;
+      height: 52px;
+      rotate: 270deg;
+      transition: 1s;
+      opacity: 0.5;
+    }
+    &:hover::after {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+    &--open {
+      &::after {
+        rotate: 360deg;
+      }
+    }
+    &::before {
+      content: ' ';
+      width: 100px;
+      height: 100px;
+    }
+    &--hookah::before {
+      background: url("../img/hookah.png") no-repeat center;
+      background-size: contain;
+    }
+    &--bar::before {
+      background: url("../img/menuBar.png") no-repeat center;
+      background-size: contain;
+    }
+    &--food::before {
+      background: url("../img/menuFood.png") no-repeat center;
+      background-size: contain;
+    }
+
+  }
+  .menu__slider {
+    height: 0;
+    transform: scale(0);
+    &--open {
+      display: flex;
+      justify-content: center;
+      height: auto;
+      transform: scale(1);
+    }
+  }
+  .slick-list {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .slick-arrow {
+    width: 80%;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/arrow-next.png");
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    color: transparent;
+    opacity: 0.25;
+    cursor: pointer;
+    transition: 1s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .slick-prev {
+    rotate: 180deg;
+  }
+  .slick-slide {
+    max-width: 700px;
+    max-height: 100vh;
+    object-fit: contain;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 0;
+    height: 0;
+    margin: 6px 0;
+    transform: scale(0);
+    li {
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+    }
+    button {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #FFFF3E;
+      opacity: 0.2;
+      color: transparent;
+      transition: 1s;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+  @media screen and (max-width: 1199.98px) {
+    padding: 40px 36px;
+  
+    &__title {
+      margin-bottom: 10px;
+      font-size: px-to-em(36);
+    }
+    &__name {
+      font-size: px-to-em(32);
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(28);
+    }
+    &__name {
+      font-size: px-to-em(24);
+      &:hover::after {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .slick-arrow {
+      max-width: 50px;
+      background-size: contain;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .slick-slide {
+      max-height: 90vh;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    .menu__slider {
+      &--open {
+        display: block;
+        padding: 0 10px;
+      }
+    }
+    &__name {
+      padding: 10px;
+    }
+    .slick-prev {
+      display: none;
+    }
+    .slick-slide {
+      max-height: 80vh;
+    }
+    .slick-dots {
+      width: auto;
+      height: auto;
+      transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    padding: 40px 16px;
+    &__title {
+      font-size: px-to-em(20);
+    }
+    &__name {
+      margin: 4px 0;
+      padding: 10px;
+      font-size: px-to-em(16);
+      &::before {
+        width: 50px;
+        height: 50px;
+      }
+      &::after {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

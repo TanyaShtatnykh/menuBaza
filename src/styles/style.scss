@@ -1,0 +1,62 @@
+@import 'mixins';
+
+@font-face {
+  font-family: Mutabor;
+  font-weight: 400;
+  src: url("../fonts/Mutabor.otf");
+}
+
+@font-face {
+  font-family: Manrope;
+  font-weight: 400 500 800;
+  src: url("../fonts/Manrope.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000000;
+}
+body, ul, ol, p {
+  margin: 0;
+  padding: 0;
+  font-family: Manrope;
+  color: #ffffff;
+}
+main {
+  background-color: #000000;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input {
+  font-family: Mutabor;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-family: Mutabor;
+}
+
+@import './src/blocks/header/header';
+@import './src/blocks/welcome/welcome';
+@import './src/blocks/main-screen/main-screen';
+@import './src/blocks/about/about';
+@import './src/blocks/slider/slider';
+@import './src/blocks/marquee/marquee';
+@import './src/blocks/available/available';
+@import './src/blocks/option/option';
+@import './src/blocks/footer/footer';
+@import './src/blocks/contacts/contacts';
+@import './src/blocks/form/form';
+@import './src/blocks/menu/menu';
+@import './src/blocks/verification/verification';
+@import './src/blocks/modal/modal';
+@import './src/blocks/menu-main-screen/menu-main-screen';

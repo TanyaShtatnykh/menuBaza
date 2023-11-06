@@ -1,0 +1,119 @@
+.available {
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px 60px;
+  }
+  &__title {
+    margin-bottom: 40px;
+    padding-left: 16px;
+    font-size: px-to-em(44);
+    line-height: lh-to-pct(54, 44);
+    font-weight: 400;
+    color: #FBFF4B;
+  }
+  .slick-list {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .slick-track {
+    display: flex;
+    padding-bottom: 36px;
+  }
+  .option.slick-slide {
+    display: flex;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    li {
+      width: 12px;
+      height: 12px;
+      margin: 0 6px;
+    }
+    button {
+      width: 12px;
+      height: 12px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #FFFF3E;
+      opacity: 0.2;
+      color: transparent;
+      transition: 1s;
+    }
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+  @media screen and (max-width: 1440px) {
+    .slick-list {
+      max-width: 1200px;
+    }
+  }
+  @media screen and (max-width: 1248px) {
+    .slick-list {
+      max-width: 1140px;
+    }
+  }
+  @media screen and (max-width: 1199.98px) {
+    .slick-list {
+      max-width: 950px;
+    }
+    &__title {
+      font-size: px-to-em(36);
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .slick-list {
+      max-width: 900px;
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    .slick-list {
+      max-width: 720px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: px-to-em(28);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &__info {
+      padding: 40px 16px;
+    }
+    .slick-list {
+      max-width: 510px;
+    }
+    .slick-dots {
+      margin-top: 8px;
+      li {
+        width: 8px;
+        height: 8px;
+        margin: 0 3px;
+      }
+      button {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__title {
+      font-size: px-to-em(20);
+    }
+    .slick-list {
+      max-width: 420px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .slick-list {
+      max-width: 280px;
+    }
+  }
+}

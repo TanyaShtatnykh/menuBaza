@@ -1,0 +1,13 @@
+mixin available(modifier)
+  section.available&attributes(attributes)
+    .available__info
+      h2.available__title Так же у нас есть
+      .available__options
+        +option("img/game.png", "Настольные игры")
+        +option("img/asia.png", "Азиатская кухня")
+        +option("img/tv.png", "8 TV c уютными зонами для комфортного отдыха")
+        +option("img/bar.png", "Большой выбор чая, горячих коктейлей, пенного")
+        +option("img/sport.png", "Спортивные трансляции всех событий в HD качестве")
+        +option("img/smoke.png", "Дымные аппараты от мастеров своего дела")
+        +option("img/table.png", "Игровой футбольный стол «кикер»")
+    +marquee
