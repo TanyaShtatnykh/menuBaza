@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 36px 100px;
+
+  &__menu-list {
+    display: flex;
+    align-self: flex-start;
+    margin-bottom: 68px;
+    padding: 0 6px;
+  }
+  &__menu-item {
+    display: flex;
+    margin-right: 60px;
+  }
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    font-family: Manrope;
+    font-size: px-to-em(22);
+    line-height: lh-to-pct(30, 22);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DBEA2F;
+    transition: 1s;
+    opacity: 0.55;
+    svg {
+      margin: 0px 0px 2px 4px;
+    }
+    &:hover {
+      border-bottom: 2px solid #FBFF4B;
+    }
+  }
+  .ui-tabs-active {
+    .main__menu-link {
+      border-bottom: 2px solid #FBFF4B;
+      opacity: 1;
+    }
+  }
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

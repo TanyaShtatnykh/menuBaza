@@ -1,4 +1,3 @@
-
 $('.available__options').slick({
   slidesToShow: 7,
   arrows: false,
@@ -51,6 +50,7 @@ $('.available__options').slick({
 });
 
 
+
 $(function () {
   $('.form__button').on('click', function(e) {
     e.preventDefault();
@@ -65,6 +65,7 @@ $(function() {
     $('main').addClass('open__page');
   });
 });
+
 
 
 $(function () {
@@ -105,6 +106,9 @@ $(function () {
       ]
     });
   });
+});
+$( function() {
+  $("#tabs").tabs();
 });
 
 

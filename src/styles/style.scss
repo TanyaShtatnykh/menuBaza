@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Manrope;
-  font-weight: 400 500 800;
+  font-weight: 300 400 500 800;
   src: url("../fonts/Manrope.ttf");
 }
 html {
@@ -60,3 +60,5 @@ h1,h2,h3,h4,h5,h6 {
 @import './src/blocks/verification/verification';
 @import './src/blocks/modal/modal';
 @import './src/blocks/menu-main-screen/menu-main-screen';
+@import './src/blocks/product/product';
+@import './src/blocks/main/main';
