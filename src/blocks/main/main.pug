@@ -38,9 +38,11 @@ mixin main(modifier)
         +product("img3.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img3.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img3.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      +menu-info("", ["1 кальян (1-3 чел)", "2 кальяна (4-6 чел)", "3 кальяна (7-10 чел)", "На столы с приставкой депозит - 1500 ₽/час"], "", "Дай знать если не очень", "Правило 5 мин! Если вам сразу не понравился вкус или крепость кальяна,мы переделаем его бесплатно", "")
     .main__category(id="bar")
       h2.main__category-title Безалкогольные напитки
       h3.main__subcategory-title Чай
+        include img/menuArrow.svg
       .main__products
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
@@ -58,11 +60,13 @@ mixin main(modifier)
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
       h3.main__subcategory-title Горячие напитки
+        include img/menuArrow.svg
       .main__products
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
       h3.main__subcategory-title Лимонады
+        include img/menuArrow.svg
       .main__products
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
@@ -70,6 +74,7 @@ mixin main(modifier)
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
       h3.main__subcategory-title Напитки
+        include img/menuArrow.svg
       .main__products
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
@@ -80,8 +85,89 @@ mixin main(modifier)
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img4.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
       h2.main__category-title Алкогольные напитки
-    .main__category(id="food")
+      h3.main__subcategory-title Коктейли
+        include img/menuArrow.svg
       .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h3.main__subcategory-title Алкоголь
+        include img/menuArrow.svg
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h3.main__subcategory-title Пиво в бутылках
+        include img/menuArrow.svg
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h3.main__subcategory-title Сraft beer kanzler в бутылках
+        include img/menuArrow.svg
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h3.main__subcategory-title Крафт сидр (стекло)
+        include img/menuArrow.svg
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h3.main__subcategory-title Кофе
+        include img/menuArrow.svg
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      +menu-info("Пробковый сбор", ["Крепкий", "Вино/Шампанское", "Пиво", "Безалкогольные"], ["700 рублей", "300 рублей", "150 рублей", "100 рублей"], "Оформи карту гостя!", "Получай кэшбэк от 5 до 15%  и получай дополнительные бонусы", "https://wallet.ytimes.ru/home?a=dc3ea535-fa10-48c1-b549-b43212dc2608&s=f1cfa04f-1966-4083-bb86-019b226f6e25")
+    .main__category(id="food")
+      h2.main__category-title К пенному
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+      h2.main__category-title Yuva Cafe
+      .main__products
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
+        +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")
         +product("img5.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")

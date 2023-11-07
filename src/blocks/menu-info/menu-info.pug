@@ -1,0 +1,19 @@
+mixin menu-info(firstTitle, points, pointsPrices, secondTitle, text, link)
+  article.menu-info&attributes(attributes)
+    .menu-info__block
+      if (firstTitle)
+        h3.menu-info__title.menu-info__title--black=firstTitle
+      .menu-info__texts
+        .menu-info__wrapper
+          each point in points
+            p.menu-info__text=point
+        if (pointsPrices)
+          .menu-info__wrapper
+            each pointPrice in pointsPrices
+              p.menu-info__text=pointPrice
+    .menu-info__block
+      h3.menu-info__title=secondTitle
+      p.menu-info__text.menu-info__text--white=text
+      if (link)
+        a.menu-info__link(href=`${link}` target="_blank") Оформить карту гостя
+          include ./img/card.svg
