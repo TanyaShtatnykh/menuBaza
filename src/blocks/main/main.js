@@ -1,18 +1,18 @@
 $(function () {
   $('a[href="#popular"]').on('click', function() {
-    $('.menu-main-screen__bg').css({'background-image' : 'url(../img/menu-bg1.png)'});
+    $('.menu-main-screen__bg').css({'background-image' : 'url(./img/menu-bg1.png)'});
   });
   $('a[href="#season"]').on('click', function() {
-    $('.menu-main-screen__bg').css({'background-image' : 'url(../img/menu-bg1.png)'});
+    $('.menu-main-screen__bg').css({'background-image' : 'url(./img/menu-bg1.png)'});
   });
   $('a[href="#hookah"]').on('click', function() {
-    $('.menu-main-screen__bg').css({'background-image' : 'url(../img/menu-bg3.png)'});
+    $('.menu-main-screen__bg').css({'background-image' : 'url(./img/menu-bg3.png)'});
   });
   $('a[href="#bar"]').on('click', function() {
-    $('.menu-main-screen__bg').css({'background-image' : 'url(../img/menu-bg4.png)'});
+    $('.menu-main-screen__bg').css({'background-image' : 'url(./img/menu-bg4.png)'});
   });
   $('a[href="#food"]').on('click', function() {
-    $('.menu-main-screen__bg').css({'background-image' : 'url(../img/menu-bg5.png)'});
+    $('.menu-main-screen__bg').css({'background-image' : 'url(./img/menu-bg5.png)'});
   });
 
   var subcategoryBtn = $('.main__subcategory-title');
