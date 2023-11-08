@@ -151,9 +151,6 @@ $(function () {
   });
 });
 
-
-
-
 $( function() {
   $("#tabs").tabs();
 
@@ -169,6 +166,19 @@ $( function() {
     $('.header__menu-item--menu').toggleClass('header__menu-item--menu--open');
   })
 });
+
+
+$(function () {
+  $('.product').on('click', function () {
+    if ($(this).hasClass('product--visible')) {
+      $(this).removeClass('product--visible');
+    } else {
+      $('.product').removeClass('product--visible');
+      $(this).addClass('product--visible');
+    }
+  });
+});
+
 $('.slider__slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
