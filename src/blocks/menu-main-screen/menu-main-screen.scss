@@ -61,6 +61,7 @@
     }
   }
   @media screen and (max-width: 767.98px) {
+    padding-top: 10px;
     .header__block {
       justify-content: space-between;
     }
@@ -125,7 +126,7 @@
       text-align: end;
     }
     &__area {
-      padding: 32px 36px 50px;
+      padding: 52px 36px 50px;
     }
   }
   @media screen and (max-width: 575.98px) {
