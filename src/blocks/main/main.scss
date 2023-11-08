@@ -46,13 +46,9 @@
   
   #bar {
     .main__products {
-      visibility: hidden;
-      max-height: 0;
-      margin-bottom: 0;
+      display: none;
       &--open {
-        visibility: visible;
-        margin-bottom: 20px;
-        max-height: 100%;
+        display: flex;
       }
     }
   }
