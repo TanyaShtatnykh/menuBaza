@@ -5,7 +5,10 @@
   max-height: 650px;
   margin: 0 auto;
   padding-top: 40px;
-
+  overflow: hidden;
+  a[href="#menu"] {
+    color: #FBFF4B;
+  }
   &__bg {
     position: absolute;
     top: 0;
@@ -40,5 +43,113 @@
     font-weight: 400;
     color: #FBFF4B;
   }
+  @media screen and (max-width: 991.98px) {
+    padding-top: 30px;
 
+    .header__contacts {
+      max-width: 724px;
+      margin: 0 auto;
+    }
+    .header__menu-link {
+      font-size: px-to-em(20);
+    }
+    &__area {
+      padding: 86px 36px 108px;
+    }
+    &__title {
+      font-size: px-to-em(36);
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    .header__block {
+      justify-content: space-between;
+    }
+    .header__logo-link {
+      max-width: 150px;
+      .header__logo-img {
+        width: 40px;
+        height: 40px;
+      }
+      .header__logo-text {
+        width: 80px;
+        height: auto;
+      }
+    }
+    .header__menu {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .header__menu-list {
+      position: absolute;
+      top: -10px;
+      flex-direction: column;
+    }
+    .header__menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 6px;
+      visibility: hidden;
+      transform: translateX(150%);
+      transition: 1s;
+      &:hover {
+        transform: scale(1);
+      }
+      &--open {
+        visibility: visible;
+        transform: translateX(0%);
+      }
+    }
+    .header__menu-item--menu {
+      display: flex;
+      visibility: visible;
+      transform: translateX(0%);
+      order: -1;
+      &::after {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        margin-left: 4px;
+        background-image: url(../img/arrowD.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: rotate(-90deg);
+        transition: 1s;
+      }
+      &--open::after {
+        transform: rotate(0);
+      }
+    }
+    .header__menu-link {
+      text-align: end;
+    }
+    &__area {
+      padding: 32px 36px 50px;
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    .header__logo-link {
+      flex-direction: row;
+      align-items: center;
+      .header__logo-img {
+        width: 35px;
+        height: 35px;
+      }
+      .header__logo-text {
+        width: 57px;
+        height: auto;
+        margin: 0 0 0 4px;
+      }  
+    }
+    .header__menu-item {
+      margin-bottom: 4px;
+    }
+    .header__menu-link {
+      font-size: px-to-em(14);
+    }
+    &__title {
+      font-size: px-to-em(20);
+    }
+  }
 }

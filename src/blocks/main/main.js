@@ -27,5 +27,17 @@ $(function () {
       $(this).addClass('main__subcategory-title--open');
       $(this).next('.main__products').addClass('main__products--open');
     }
+    if ($(this).hasClass('main__subcategory-title--open')) {
+      $('html, body').animate({
+        scrollTop: $(this).offset().top
+      }, 'fast');
+    };
   });
+  if ($(window).width() < 768) {
+    $('.main__menu-link').on('click', function () {
+      $('.main__menu-link').parent('.main__menu-item').toggleClass('main__menu-item--open');
+      $('.main__menu-list').toggleClass('main__menu-list--open');
+    });
+  };
 });
+

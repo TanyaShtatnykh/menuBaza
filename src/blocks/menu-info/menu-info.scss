@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 68px 0;
+  padding: 68px 0 0px;
 
   &__block {
     display: flex;
@@ -81,6 +81,131 @@
     }
     &:active {
       opacity: 0.5;
+    }
+  }
+  @media screen and (max-width: 1239.98px) {
+    &__block {
+      &:first-of-type {
+        padding: 20px;
+      }
+      &:last-of-type {
+        max-width: 320px;
+        margin-left: 50px;
+        padding: 0px;
+      }
+    }
+    &__texts {
+      .menu-info__text {
+        font-size: px-to-em(22);
+        line-height: lh-to-pct(30, 22);
+        font-weight: 400;
+      }
+    }
+    &__title {
+      margin-bottom: 6px;
+      font-size: px-to-em(20);
+      line-height: lh-to-pct(27, 20);
+      &--black {
+        margin-bottom: 32px;
+        font-size: px-to-em(24);
+        line-height: lh-to-pct(33, 24);
+      }
+    }
+    &__text {
+      &--white {
+        font-size: px-to-em(20);
+        line-height: lh-to-pct(27, 20);
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 32px;
+      }
+    }
+    &__link {
+      padding: 14px 10px;
+      font-size: px-to-em(16);
+      line-height: lh-to-pct(16, 20);
+      color: #FFF;
+      text-decoration: none;
+      transition: 1s;
+      svg {
+        margin-left: 14px;
+      }
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    flex-direction: column-reverse;
+    padding: 20px 0 0;
+    &__block {
+      &:first-of-type {
+        margin-top: 10px;
+        padding: 20px;
+      }
+      &:last-of-type {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+    &__title {
+      font-size: px-to-em(16);
+      &--black {
+        margin-bottom: 20px;
+        font-size: px-to-em(20);
+      }
+    }
+    &__texts {
+      .menu-info__text {
+        font-size: px-to-em(18);
+      }
+    }
+    &__text {
+      &--white {
+        font-size: px-to-em(16);
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 20px;
+      }
+    }
+    &__link {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: px-to-em(12);
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    &__title {
+      font-size: px-to-em(12);
+      &--black {
+        margin-bottom: 20px;
+        font-size: px-to-em(12);
+      }
+    }
+    &__texts {
+      .menu-info__text {
+        font-size: px-to-em(10);
+      }
+    }
+    &__text {
+      &--white {
+        font-size: px-to-em(12);
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+    &__link {
+      margin-top: 10px;
+      padding: 8px;
+      font-size: px-to-em(10);
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+      }
     }
   }
 }

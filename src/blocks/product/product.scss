@@ -57,4 +57,39 @@
       transform: translateY(0);
     }
   }
+  @media screen and (max-width: 767.98px) {
+    width: 154px;
+    height: 211px;
+    &__photo {
+      height: 211px;
+    }
+    &__name {
+      font-size: px-to-em(14);
+    }
+    &__description {
+      font-size: px-to-em(8);
+    }
+    &__price {
+      font-size: px-to-em(8);
+    }
+  }
+  @media screen and (max-width: 575.98px) {
+    width: 138px;
+    height: 190px;
+    &__photo {
+      height: 190px;
+    }
+    &__content {
+      padding: 4px;
+    }
+    &__name {
+      font-size: px-to-em(10);
+    }
+    &__description {
+      font-size: px-to-em(8);
+    }
+    &__price {
+      font-size: px-to-em(10);
+    }
+  }
 }
