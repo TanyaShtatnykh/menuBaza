@@ -5,13 +5,21 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0px 36px 100px;
-
-  &__menu-list {
-    display: flex;
-    align-self: flex-start;
+  
+  &__menu-area {
     margin-top: -30px;
     margin-bottom: 58px;
     padding: 0 6px;
+  }
+  &__menu-list {
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  ul.main__menu-list::-webkit-scrollbar {
+    display: none;
   }
   &__menu-item {
     display: flex;
@@ -98,9 +106,8 @@
     gap: 20px;
   }
   @media screen and (max-width: 1239.98px) {
-    &__menu-list {
+    &__menu-area {
       margin-top: -26px;
-      margin-bottom: 58px;
     }
     &__menu-item {
       margin-right: 40px;
@@ -112,9 +119,8 @@
     }
   }
   @media screen and (max-width: 991.98px) {
-    &__menu-list {
+    &__menu-area {
       margin-top: -24px;
-      margin-bottom: 58px;
       padding: 0;
     }
     &__menu-item {
@@ -135,63 +141,8 @@
   }
   @media screen and (max-width: 767.98px) {
     padding: 0px 16px 40px;
-    &__menu-list {
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto 10px;
-      max-height: 30px;
-      overflow: hidden;
-      transition: max-height 0.6s linear;
-      &--open {
-        max-height: 180px;
-        transition: max-height 0.6s linear;
-      }
-    }
-    &__menu-item {
-      align-items: center;
-      margin-right: 0;
-      padding: 4px;
-      transition: 0.6s;
-      &:first-of-type {
-        &::after {
-          content: " ";
-          width: 12px;
-          height: 12px;
-          margin-left: 4px;
-          background-image: url(../img/arrowD.svg);
-          background-repeat: no-repeat;
-          background-position: center;
-          transform: rotate(-90deg);
-          transition: 1s;
-        }
-      }
-      
-      &--open:first-of-type {
-        &::after {
-          transform: rotate(0);
-        }
-      }
-      &:not(:first-of-type) {
-        visibility: hidden;
-        max-height: 0;
-        &:nth-of-type(even) {
-          transform: translateX(250%);
-        }
-        &:nth-of-type(odd) {
-          transform: translateX(-250%);
-        }
-      }
-      &--open:not(:first-of-type) {
-        display: flex;
-        visibility: visible;
-        max-height: 100%;
-        &:nth-of-type(even) {
-          transform: translateX(0);
-        }
-        &:nth-of-type(odd) {
-          transform: translateX(0);
-        }
-      }
+    &__menu-area {
+      margin: 0;
     }
     &__category-title {
       font-size: px-to-em(22);
@@ -207,7 +158,11 @@
   }
   @media screen and (max-width: 575.98px) {
     &__menu-item {
+      margin-right: 10px;
       padding: 2px;
+    }
+    &__menu-list {
+      padding: 5px 0;
     }
     &__menu-link {
       font-size: px-to-em(12);

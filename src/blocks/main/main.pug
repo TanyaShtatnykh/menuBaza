@@ -1,21 +1,22 @@
 mixin main(modifier)
   main.main&attributes(attributes)(id="tabs")
-    ul.main__menu-list
-      li.main__menu-item
-        a.main__menu-link(href="#popular") Самое популярное
-          include img/popular.svg
-      li.main__menu-item
-        a.main__menu-link(href="#season") Сезонное меню
-          include img/season.svg
-      li.main__menu-item
-        a.main__menu-link(href="#hookah") Кальяны
-          include img/hookah.svg
-      li.main__menu-item
-        a.main__menu-link(href="#bar") Барное меню
-          include img/drink.svg
-      li.main__menu-item
-        a.main__menu-link(href="#food") Еда
-          include img/food.svg
+    .main__menu-area
+      ul.main__menu-list
+        li.main__menu-item
+          a.main__menu-link(href="#popular") Самое популярное
+            include img/popular.svg
+        li.main__menu-item
+          a.main__menu-link(href="#season") Сезонное меню
+            include img/season.svg
+        li.main__menu-item
+          a.main__menu-link(href="#hookah") Кальяны
+            include img/hookah.svg
+        li.main__menu-item
+          a.main__menu-link(href="#bar") Барное меню
+            include img/drink.svg
+        li.main__menu-item
+          a.main__menu-link(href="#food") Еда
+            include img/food.svg
     .main__category(id="popular")
       .main__products
         +product("img1.jpeg", "Название1", "(DarkSide / MustHave / Starline / Overdose/ Sebero/BlackBurn / Spectrum / MattPear)", "Цена")

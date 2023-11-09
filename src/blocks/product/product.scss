@@ -1,14 +1,22 @@
 .product {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 212px;
-  height: 292px;
-  overflow: hidden;
-  cursor: pointer;
-  background: linear-gradient(157deg, #000 0%, #171707 26.03%, #3E3E12 50.2%, #737522 75.42%, #A5A831 87.98%, #FBFF4B 100%);
-    
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &--photo {
+      position: relative;
+      width: 212px;
+      height: 292px;
+      margin-bottom: 6px;
+      overflow: hidden;
+      cursor: pointer;
+      background: linear-gradient(157deg, #000 0%, #171707 26.03%, #3E3E12 50.2%, #737522 75.42%, #A5A831 87.98%, #FBFF4B 100%);
+    }
+  }
   &__photo {
     width: 100%;
     height: 292px;
@@ -24,29 +32,29 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    padding: 70px 4px 4px;
+    padding: 4px 4px 20px;
     background-color: rgba(0, 0, 0, 0.70);
     visibility: hidden;
     transform: translateY(100%);
-    transition: 1s;
+    transition: 0.6s;
   }
   &__name {
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     font-family: Manrope;
     font-size: px-to-em(18);
     font-weight: 800;
     line-height: lh-to-pct(25, 18);
     text-transform: uppercase;
-    color: #FFF;
+    color: #FBFF4B;
   }
   &__description {
     max-width: 170px;
+    margin-top: auto;
     font-size: px-to-em(12);
     font-weight: 300;
     line-height: lh-to-pct(20, 12);
   }
   &__price {
-    margin-top: auto;
     font-size: px-to-em(12);
     font-weight: 800;
     line-height: lh-to-pct(20, 12);
@@ -59,8 +67,12 @@
     }
   }
   @media screen and (max-width: 767.98px) {
-    width: 154px;
-    height: 211px;
+    &__block {
+      &--photo {
+        width: 154px;
+        height: 211px;
+      }
+    }
     &__photo {
       height: 211px;
     }
@@ -75,8 +87,12 @@
     }
   }
   @media screen and (max-width: 575.98px) {
-    width: 138px;
-    height: 190px;
+    &__block {
+      &--photo {
+        width: 138px;
+        height: 190px;
+      }
+    }
     &__photo {
       height: 190px;
     }
@@ -84,12 +100,6 @@
       padding: 4px;
     }
     &__name {
-      font-size: px-to-em(10);
-    }
-    &__description {
-      font-size: px-to-em(8);
-    }
-    &__price {
       font-size: px-to-em(10);
     }
   }
